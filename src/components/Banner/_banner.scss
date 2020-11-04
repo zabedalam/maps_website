@@ -1,0 +1,74 @@
+@import "../Banner/bannerVariable";
+
+#jumbo {
+    background: linear-gradient(0deg,rgba(0,0,0,0.87),rgba(0,0,0,0.6)),
+    url($backgroundImg) top center no-repeat;
+  background-size:100% 100%;
+  text-align: center;
+  padding: 0 4% 6% 4% !important;
+//   margin: 0px auto;
+//   padding: 5px;
+
+//   height: 85vh!important;
+  
+  #logoRow{
+      border-bottom: 1px solid rgb(117,99,99);
+      align-items: center;
+
+      #logo{
+        //   padding-top: 4%;
+        padding-top: 2%;
+
+          padding-bottom: 2%;
+
+          img{
+            //   min-width: 70px;
+            //   min-height: auto;
+            max-width: 70px;
+              width: 15vw;
+              height: auto;
+          }
+      }
+  }
+
+  #motto {
+      @include jumboText();
+      padding:8% 0 2% 0;
+      max-width: 90%;
+      font-weight: bold;
+      margin: auto;
+      font-size: 6vw;
+  }
+
+  #mottoCaption{
+      @include captionText();
+      max-width: 85%;
+      font-weight: bold;
+      margin-bottom: 3vmin!important;
+      color: white;
+      padding-bottom: 2%;
+      margin: 0 auto;
+      @media screen and (max-width:400px) {
+          font-size: 3vw;
+      }
+  }
+
+  #getStartedBtn{
+      margin: auto;
+  }
+
+
+}
+
+#btnLoginRow{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+
+    .btnLogin{
+        height: 70px;
+        width:70px;
+        padding:16px;
+        cursor: pointer;
+    }
+}
