@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row } from "reactstrap";
-import Logo from "../../assets/pics/mapsLogo.png";
+import Logo from "../../assets/pics/logo.png";
 import BurgerMenu from "../../assets/pics/BurgerMenu.png";
+import Menu from "../Navbar/Navbar";
+import {Link} from "react-router-dom"
+import * as FaIcons from "react-icons/fa"
+
 
 
 export default function Banner() {
+  const [sidebar, setSidebar] = useState(false);
+  const showSidebar = () => {
+     setSidebar(!sidebar);
+   };
   return (
     <>
       <Container fluid id="jumbo">
@@ -13,8 +21,26 @@ export default function Banner() {
             <img src={Logo} alt="logo" />
           </div>
           <div id="btnLoginRow">
+            {sidebar?(<Menu setSidebar={setSidebar}/>):( <div className="navbar">
+          <Link to="#" className="menu-bars">
+              <FaIcons.FaBars onClick={()=>{setSidebar(true)}}/>
+          </Link>
+          </div>
+)
+                          
+
+            }
+
             {/* <h1>Burger Menu</h1> */}
-            <img className="btnLogin" src={BurgerMenu} alt="burgerMenu"/>
+            {/* <img
+              className="btnLogin"
+              src={BurgerMenu}
+              onClick={() => setSidebar(!sidebar)}
+              alt="burgerMenu"
+            /> */}
+            {/* <a href="#" className="close"></a> */}
+            {/* {sidebar === true?(
+            <Menu show={sidebar} showSidebar={showSidebar}/>):null} */}
           </div>
         </Row>
         <Container>
@@ -35,9 +61,7 @@ export default function Banner() {
             </div>
           </Row>
         </Container>
-        <Row className="appBtn">
-          {/* <button>Contact us</button> */}
-        </Row>
+        <Row className="appBtn">{/* <button>Contact us</button> */}</Row>
       </Container>
     </>
   );
