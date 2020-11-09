@@ -12,7 +12,7 @@ function Navbar(props) {
     <>
     <IconContext.Provider value={{color:"#fff"}}>
     <div 
-      style={{ zIndex: 1031,margin:"-65px -40px 0 0 " }}
+      style={{ zIndex: 1031}}
       className="w-100 h-100 position-fixed bg-dark"
     >
         <div  className="container">
@@ -32,10 +32,10 @@ function Navbar(props) {
               </li> */}
               <ul className="nav-menu-items ">
               <li className="navbar-toggle">
-                  <Link to="#" className="menu-bars">
-              <AiIcons.AiOutlineClose
+                  {/* <Link to="#" className="menu-bars"> */}
+              <AiIcons.AiOutlineClose  className="menu-bars"
               onClick={()=>{props.setSidebar(false)}}/>
-                  </Link>
+                  {/* </Link> */}
               </li>
               {SidebarData.map((item,index)=>{
                   return(
