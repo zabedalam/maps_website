@@ -1,9 +1,9 @@
 import React from "react";
 import { Row, Col, Image, Container, Button } from "react-bootstrap";
-import WebDevelopment from "../../assets/pics/development.png"
-import ItSupporrt from "../../assets/pics/itsupport.png"
-import DigitalMarketing from "../../assets/pics/digitalmarketing.png"
-
+import WebDevelopment from "../../assets/pics/development.png";
+import ItSupporrt from "../../assets/pics/itsupport.png";
+import DigitalMarketing from "../../assets/pics/digitalmarketing.png";
+import BlockButton from "../BlockButton/BlockButton";
 
 const GoalTitle = (props) => {
   return (
@@ -22,7 +22,7 @@ const GoalCaption = (props) => {
 };
 
 const Feature = (props) => {
-    let text="Read more >"
+  let text = "Read more >";
   return (
     <Col
       className="feature d-flex justify-content-center align-items-center flex-column text-center"
@@ -30,10 +30,23 @@ const Feature = (props) => {
       md={3}
       lg={3}
     >
-      <Image src={props.icon} rounded fluid className="mb-5" style={{ width: "35%" }} />
-  <span>{props.title}</span>
+      <Image
+        src={props.icon}
+        rounded
+        fluid
+        className="mb-5"
+        style={{ width: "35%" }}
+      />
+      <h4>{props.title}</h4>
       <p className="captionTitle">{props.description}</p>
-  <Button>{text}</Button>
+      <div className="appBtn"
+        id="startBtn">
+      <BlockButton
+        text={text}
+        style={{ margin: "auto" }}
+        
+      />
+</div>
     </Col>
   );
 };
@@ -46,7 +59,7 @@ function Services() {
         <GoalCaption></GoalCaption>
       </Row>
       <Container>
-        <Row className="d-flex justify-content-between align-items-center m-5">
+        <Row className="d-flex justify-content-between align-items-center m-5 goalRow">
           <Feature
             icon={WebDevelopment}
             title="Web Development"
@@ -55,7 +68,7 @@ function Services() {
 
           <Feature
             icon={ItSupporrt}
-            title="It Support"
+            title="IT Support"
             description="We are dedicated to support 24/7"
           />
 
