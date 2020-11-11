@@ -1,13 +1,19 @@
 import React from 'react'
 import ZabedPic from "../../assets/pics/zabed_pic.jpg";
 import MemberCard from './MemberCard';
-import {Container,Row} from "react-bootstrap"
+import {Container,Row,Col} from "react-bootstrap"
 
 function Members() {
     return (
         <>
          <Container>
-        <Row className="d-flex  m-5">
+          <Col md={12} className="headerTitle">
+          <h2>Meet the teams</h2>
+        </Col> 
+             <Row  sm={12} md={6} lg={4} className="d-flex justify-content-between align-items-center mb-5"
+        >
+        {/* <Col className="d-flex justify-content-between align-items-center" */}
+        
           <MemberCard
             pic={ZabedPic}
             title="Web Developer"
@@ -30,6 +36,7 @@ function Members() {
 
             description="We ensure to reach the right consumer"
           />
+        {/* </Col> */}
         </Row>
       </Container>   
         </>

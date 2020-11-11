@@ -10,3 +10,26 @@
         }
     }
 }
+
+.cardStyle{
+
+padding-top:70px;
+text-align: left;
+img{
+    margin-top:-50px ;
+}
+
+// &:hover{
+//     background: $primaryTextColorYellow;
+//     color: #fff;
+// }
+}
+
+.cardStyleBody{
+    
+&:hover{
+    
+        background: $primaryTextColorYellow;
+        color: #fff;
+    }
+}
