@@ -4,6 +4,7 @@ import { Container } from 'reactstrap';
 import Banner from "../Banner/Banner"
 // import Navbar from "../Navbar/Navbar"
 import Services from "../Services/Services"
+import Members from "../Team/Members"
 
 
 
@@ -14,6 +15,7 @@ export default function LandingPage() {
 {/* <Navbar/> */}
         <Banner/>
 <Services/>
+<Members/>
     </Container>
     
     </>

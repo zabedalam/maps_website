@@ -1,0 +1,12 @@
+.socials{
+    display: flex;
+    justify-content: space-around;
+
+    i{
+        transition: color 600ms ease-in-out;
+        cursor: pointer;
+        &:hover{
+            color: $primaryTextColorYellow;
+        }
+    }
+}
