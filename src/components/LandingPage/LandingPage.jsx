@@ -5,6 +5,7 @@ import Banner from "../Banner/Banner"
 // import Navbar from "../Navbar/Navbar"
 import Services from "../Services/Services"
 import Members from "../Team/Members"
+import Faq from "../FAQ/Index"
 
 
 
@@ -16,6 +17,8 @@ export default function LandingPage() {
         <Banner/>
 <Services/>
 <Members/>
+<Faq/>
+
     </Container>
     
     </>
