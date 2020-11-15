@@ -6,6 +6,7 @@ import Banner from "../Banner/Banner"
 import Services from "../Services/Services"
 import Members from "../Team/Members"
 import Faq from "../FAQ/Index"
+import Contact from "../Contact/Contact"
 
 
 
@@ -18,6 +19,7 @@ export default function LandingPage() {
 <Services/>
 <Members/>
 <Faq/>
+<Contact/>
 
     </Container>
     
