@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container,Row,Col} from "reactstrap"
 import usersImg from "../../assets/pics/users.png"
+import Client from './Client'
 
 function Review() {
     return (
@@ -29,8 +30,9 @@ function Review() {
     </Col>
 </Col>
 <Col id="rpItemThree" className="col-md-8">
-    <Container className="p-5">
-        <h2>Here will be carosouel</h2>
+    <Container>
+        {/* <h2>Here will be carosouel</h2> */}
+        <Client/>
     </Container>
 </Col>
               </Row>
