@@ -7,6 +7,7 @@ import Services from "../Services/Services"
 import Members from "../Team/Members"
 import Faq from "../FAQ/Index"
 import Contact from "../Contact/Contact"
+import Review from "../Testomony/Review"
 
 
 
@@ -17,9 +18,11 @@ export default function LandingPage() {
 {/* <Navbar/> */}
         <Banner/>
 <Services/>
+<Review/>
 <Members/>
 <Faq/>
 <Contact/>
+
 
     </Container>
     
