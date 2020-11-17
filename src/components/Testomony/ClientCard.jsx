@@ -1,8 +1,9 @@
 import React from 'react'
+import { Container } from 'reactstrap'
 
 function ClientCard({clientImg}) {
     return (
-        <div className="clientCard">
+        <Container className="clientCard">
           <img src={clientImg} alt="client"/>  
           <h2>Zabed Alam</h2>
           <p>
@@ -10,7 +11,7 @@ function ClientCard({clientImg}) {
       officiis, velit id libero illum harum hic magni, quae repellendus adipisci
       possimus saepe nostrum doloribus repudiandae asperiores commodi voluptate.
     </p>
-        </div>
+        </Container>
     )
 }
 

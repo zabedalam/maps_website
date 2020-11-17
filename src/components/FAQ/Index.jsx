@@ -7,7 +7,7 @@ function Index () {
     {
       question: 'How many programmers does it take to screw in a lightbulb?',
       answer: 'None. We don\'t address hardware issues.',
-      open: true
+      open: false
     },
     {
       question: 'Who is the most awesome person?',

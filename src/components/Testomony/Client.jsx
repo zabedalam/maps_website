@@ -10,7 +10,7 @@ import { Container } from 'reactstrap'
 function Client({clientImg,clientName}) {
     return (
         <>
-         <div className="client">
+         <Container className="client">
              {/* <Overlay/> */}
              <h2>CLIENT SAYS</h2>
              {/* <Container> */}
@@ -22,7 +22,7 @@ function Client({clientImg,clientName}) {
 
                  </Slider>
              {/* </Container> */}
-             </div>   
+             </Container>   
         </>
     )
 }
