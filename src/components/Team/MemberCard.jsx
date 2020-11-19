@@ -18,9 +18,10 @@ function MemberCard({pic,title,description,name}) {
             <Card  className="align-items-center mb-5 cardStyleBody " style={{boxShadow:"3px 3px 3px 3px #9E9E9E"}} >
               <CardImg src={pic}  className="img-fluid rounded-circle w-50 mb-3"/>
               <CardBody>
-  <CardTitle>{title}</CardTitle>
-  <CardSubtitle>{name}</CardSubtitle>
-  <CardText>{description}</CardText>
+  <CardTitle>{name}</CardTitle>
+  <CardSubtitle>{title}</CardSubtitle>
+  
+  {/* <CardText>{description}</CardText> */}
   <Socials/>
               </CardBody>
             </Card>

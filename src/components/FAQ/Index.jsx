@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Header from './Header';
 import FAQ from './Faq';
+import { Container,Row } from 'reactstrap';
 
 function Index () {
   const [faqs, setfaqs] = useState([
@@ -35,14 +36,14 @@ function Index () {
 
 
   return (
-    <div className="App">
+    <Container fluid>
       <Header />
-      <div className="faqs">
+      <div className="faqs line">
         {faqs.map((faq, i) => (
           <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
         ))}
       </div>
-    </div>
+    </Container>
   );
 }
 

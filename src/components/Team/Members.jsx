@@ -6,7 +6,7 @@ import {Container,Row,Col} from "react-bootstrap"
 function Members() {
     return (
         <>
-         <Container>
+         <Container fluid className="teamContainer">
           <Col md={12} className="headerTitle">
           <h2>Meet the teams</h2>
         </Col> 
@@ -31,7 +31,7 @@ function Members() {
 
           <MemberCard
             pic={ZabedPic}
-            title="Digital Marketing Specialist"
+            title="Digital Marketer"
             name="Zabedul Alam"
 
             description="We ensure to reach the right consumer"

@@ -1,6 +1,14 @@
+.teamContainer{
+    background: #56687a;
+    // margin: 0;
+    position: relative;
+    h2{color: #fff;}
+
+}
 .socials{
+    padding-top: 15px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     i{
         transition: color 600ms ease-in-out;
@@ -11,10 +19,12 @@
     }
 }
 
+
 .cardStyle{
 
-padding-top:70px;
-text-align: left;
+padding-top:90px;
+text-align: center;
+font-weight: bold;
 img{
     margin-top:-50px ;
 }
@@ -29,7 +39,7 @@ img{
     
 &:hover{
     
-        background: $primaryTextColorYellow;
+        background: $secondaryBgColor;
         color: #fff;
     }
 }
